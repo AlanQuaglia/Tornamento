@@ -1,0 +1,506 @@
+/* Media queries para dispositivos móviles */
+@media only screen and (max-width: 370px) {
+    .background {
+        height: 100%;
+        width: auto;
+    }
+
+    .container-isla {
+        position: absolute;
+        align-items: center;
+        top: 10%;
+    }
+
+    .hover {
+        display: flex;
+        width: 70%;
+        /* Modificado para ser responsive */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+        left: 60%;
+        /* Alineará el elemento en el centro horizontalmente */
+        transform: translate(-50%, -50%);
+        /* Centrar el elemento */
+        padding: 10%;
+        margin-top: -80%;
+        align-items: center;
+        animation: hover 15s linear infinite;
+        /* Cambiado de anim a hover */
+        animation-fill-mode: none;
+    }
+
+    @keyframes hover {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-30px);
+        }
+
+        75% {
+            transform: translateY(20px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .title-1 {
+        width: 260px;
+        height: 60px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        top: -20%;
+        left: 1%;
+    }
+
+    /*card*/
+    .wrapper .card {
+        width: 280px;
+        height: 490px;
+    }
+
+    .wrapper .back-face img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .back-face {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .back-face .info .title {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .tornamento img {
+        height: 140px !important;
+        width: 250px !important;
+        padding: 0px !important;
+        border-radius: 0% !important;
+        box-shadow: none !important;
+        animation: none !important;
+        background: linear-gradient(#1e418600, #0e2a5e00) !important;
+        margin: -40px !important;
+    }
+
+    #astronaut2>img {
+        width: 150px;
+        left: 3%;
+    }
+
+    #astronaut>img {
+        left: 65%;
+        width: 105px;
+    }
+
+    ul li a {
+        width: 45px;
+        /* Reduce el tamaño del botón */
+        height: 45px;
+        /* Reduce el tamaño del botón */
+        margin: 10px;
+        /* Reduce el margen */
+        line-height: 45px;
+        /* Ajusta la altura del texto */
+    }
+
+    ul li a i.fa-brands {
+        font-size: 20px;
+        /* Reduce el tamaño del ícono */
+        line-height: 45px;
+        /* Ajusta la altura del texto */
+    }
+}
+
+/* Añade este media query para aplicar estilos específicos para dispositivos con ancho entre 768px y 1023px (vista de tablet) */
+@media only screen and (min-width: 368px) and (max-width: 600px) {
+    .background {
+        height: 100%;
+        width: auto;
+    }
+
+    .container-isla {
+        position: absolute;
+        align-items: center;
+        top: 10%;
+    }
+
+    .hover {
+        display: flex;
+        width: 85%;
+        /* Modificado para ser responsive */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+        left: 60%;
+        /* Alineará el elemento en el centro horizontalmente */
+        transform: translate(-50%, -50%);
+        /* Centrar el elemento */
+        padding: 10%;
+        margin-top: -70%;
+        align-items: center;
+        animation: hover 15s linear infinite;
+        /* Cambiado de anim a hover */
+        animation-fill-mode: none;
+    }
+
+    @keyframes hover {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-30px);
+        }
+
+        75% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .title-1 {
+        width: 330px;
+        height: 80px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        top: -10%;
+        left: 1%;
+    }
+
+    .info {
+        font-size: 15px;
+    }
+
+    .wrapper .card {
+        width: 350px;
+        height: 500px;
+    }
+
+    .wrapper .back-face img {
+        height: 190px;
+        width: 190px;
+    }
+
+    .back-face .info .title {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .tornamento img {
+        height: 170px !important;
+        width: 320px !important;
+        padding: 0px !important;
+        border-radius: 0% !important;
+        box-shadow: none !important;
+        animation: none !important;
+        background: linear-gradient(#1e418600, #0e2a5e00) !important;
+        margin: -60px !important;
+    }
+
+    #astronaut>img,
+    #astronaut2>img {
+        padding-top: 5%;
+    }
+
+    #astronaut2>img {
+        width: 150px;
+        left: 2%;
+    }
+
+    #astronaut>img {
+        left: 70%;
+        width: 115px;
+    }
+
+    ul li a {
+        width: 50px;
+        /* Ajusta el tamaño del botón */
+        height: 50px;
+        /* Ajusta el tamaño del botón */
+        margin: 13px;
+        /* Ajusta el margen */
+        line-height: 40px;
+        /* Ajusta la altura del texto */
+    }
+
+    ul li a i.fa-brands {
+        font-size: 25px;
+        /* Ajusta el tamaño del ícono */
+        line-height: 50px;
+        /* Ajusta la altura del texto */
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .background {
+        height: 100%;
+        width: auto;
+    }
+
+    .container-isla {
+        position: absolute;
+        align-items: center;
+        top: 10%;
+    }
+
+    .hover {
+        display: flex;
+        width: 120%;
+        /* Modificado para ser responsive */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+        left: 60%;
+        /* Alineará el elemento en el centro horizontalmente */
+        transform: translate(-50%, -50%);
+        /* Centrar el elemento */
+        padding: 10%;
+        margin-top: -60%;
+        align-items: center;
+        animation: hover 13s linear infinite;
+        /* Cambiado de anim a hover */
+        animation-fill-mode: none;
+    }
+
+    @keyframes hover {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-10px);
+        }
+
+        75% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .title-1 {
+        width: 450px;
+        height: 100px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        top: -10%;
+        left: 1%;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .wrapper .card {
+        width: 480px;
+        height: 630px;
+    }
+
+    .wrapper .back-face img {
+        height: 230px;
+        width: 230px;
+    }
+
+    .back-face .info .title {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 26px;
+    }
+
+    .tornamento img {
+        height: 240px !important;
+        width: 430px !important;
+        padding: 0px !important;
+        border-radius: 0% !important;
+        box-shadow: none !important;
+        animation: none !important;
+        background: linear-gradient(#1e418600, #0e2a5e00) !important;
+        margin: -70px !important;
+    }
+
+    #astronaut>img,
+    #astronaut2>img {
+        padding-top: 5%;
+    }
+
+    #astronaut2>img {
+        width: 200px;
+        left: 13%;
+    }
+
+    #astronaut>img {
+        width: 215px;
+        left: 65%;
+    }
+
+    ul li a {
+        width: 70px;
+        /* Ajusta el tamaño del botón */
+        height: 70px;
+        /* Ajusta el tamaño del botón */
+        margin: 20px;
+        /* Ajusta el margen */
+        line-height: 60px;
+        /* Ajusta la altura del texto */
+    }
+
+    ul li a i.fa-brands {
+        font-size: 40px;
+        /* Ajusta el tamaño del ícono */
+        line-height: 70px;
+        /* Ajusta la altura del texto */
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px) {
+    .background {
+        height: 100%;
+    }
+
+    .container-isla {
+        position: absolute;
+        align-items: center;
+        top: 10%;
+    }
+
+    .hover {
+        display: flex;
+        width: 150%;
+        /* Modificado para ser responsive */
+        height: auto;
+        /* Altura automática para mantener la proporción */
+        left: 60%;
+        /* Alineará el elemento en el centro horizontalmente */
+        transform: translate(-50%, -50%);
+        /* Centrar el elemento */
+        padding: 10%;
+        margin-top: -50%;
+        align-items: center;
+        animation: hover 13s linear infinite;
+        /* Cambiado de anim a hover */
+        animation-fill-mode: none;
+    }
+
+    @keyframes hover {
+        0% {
+            transform: translateY(0);
+        }
+
+        25% {
+            transform: translateY(-10px);
+        }
+
+        75% {
+            transform: translateY(30px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    #astronaut>img,
+    #astronaut2>img {
+        padding-top: 5%;
+    }
+
+    .title-1 {
+        width: 540px;
+        height: 130px;
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin: 0 auto;
+        top: -10%;
+        left: 1%;
+    }
+
+    .info {
+        font-size: 20px;
+    }
+
+    .wrapper .card {
+        width: 570px;
+        height: 610px;
+    }
+
+    .wrapper .back-face img {
+        height: 230px;
+        width: 230px;
+    }
+
+    .back-face .info .title {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 27px;
+    }
+
+    .tornamento img {
+        height: 285px !important;
+        width: 500px !important;
+        padding: 0px !important;
+        border-radius: 0% !important;
+        box-shadow: none !important;
+        animation: none !important;
+        background: linear-gradient(#1e418600, #0e2a5e00) !important;
+        margin: -90px !important;
+    }
+
+    #astronaut2>img {
+        width: 200px;
+        left: 15%;
+    }
+
+    #astronaut>img {
+        width: 215px;
+        left: 70%;
+    }
+
+    ul li a {
+        width: 70px;
+        /* Ajusta el tamaño del botón */
+        height: 70px;
+        /* Ajusta el tamaño del botón */
+        margin: 25px;
+        /* Ajusta el margen */
+        line-height: 60px;
+        /* Ajusta la altura del texto */
+    }
+
+    ul li a i.fa-brands {
+        font-size: 30px;
+        /* Ajusta el tamaño del ícono */
+        line-height: 70px;
+        /* Ajusta la altura del texto */
+    }
+}
